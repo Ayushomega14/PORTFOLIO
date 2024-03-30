@@ -37,28 +37,48 @@ function initializeHobbyCarousel() {
 
     setInterval(nextHobbySlide, 3000); // Change image every 3 seconds (3000 milliseconds)
 }
-
 // JavaScript for auto image change in certificate carousel
-function initializeCertiCarousel() {
-    let currentCertiSlide = 0;
-    const certiSlides = document.querySelectorAll('.certi-carousel .carousel-slide');
+function initializeCertificateCarousel() {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.certi-carousel .carousel-slide');
 
-    function nextCertiSlide() {
-        certiSlides[currentCertiSlide].style.display = 'none';
-        currentCertiSlide = (currentCertiSlide + 1) % certiSlides.length;
-        certiSlides[currentCertiSlide].style.display = 'block';
+    function nextSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.display = 'block';
     }
 
-    function prevCertiSlide() {
-        certiSlides[currentCertiSlide].style.display = 'none';
-        currentCertiSlide = (currentCertiSlide - 1 + certiSlides.length) % certiSlides.length;
-        certiSlides[currentCertiSlide].style.display = 'block';
+    function prevSlide() {
+        slides[currentSlide].style.display = 'none';
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        slides[currentSlide].style.display = 'block';
     }
 
-    setInterval(nextCertiSlide, 3000); // Change image every 3 seconds (3000 milliseconds)
+    setInterval(nextSlide, 3000); // Change image every 3 seconds (3000 milliseconds)
+}
+
+// JavaScript for auto image change in hackathon carousel
+function initializeHackathonCarousel() {
+    let currentHackathonSlide = 0;
+    const hackathonSlides = document.querySelectorAll('.hackathons .hackathon-carousel .carousel-slide');
+
+    function nextHackathonSlide() {
+        hackathonSlides[currentHackathonSlide].style.display = 'none';
+        currentHackathonSlide = (currentHackathonSlide + 1) % hackathonSlides.length;
+        hackathonSlides[currentHackathonSlide].style.display = 'block';
+    }
+
+    function prevHackathonSlide() {
+        hackathonSlides[currentHackathonSlide].style.display = 'none';
+        currentHackathonSlide = (currentHackathonSlide - 1 + hackathonSlides.length) % hackathonSlides.length;
+        hackathonSlides[currentHackathonSlide].style.display = 'block';
+    }
+
+    setInterval(nextHackathonSlide, 3000); // Change image every 3 seconds (3000 milliseconds)
 }
 
 // Call the function to initialize certificate carousel
-initializeCertiCarousel();
 initializeProjectCarousel();
 initializeHobbyCarousel();
+initializeHackathonCarousel();
+initializeCertificateCarousel();
