@@ -22,12 +22,17 @@ img {
 
 /* Header */
 header {
+    position: fixed; /* Fixed position */
+    top: 0; /* Position at the top */
+    width: 100%; /* Full width */
+    z-index: 999; /* Ensure it stays on top */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #343a40;
-    color: #fff;
+    background-color: #196ce02d; /* Light blue color */
+    color: #0a0707;
+    border-radius: 50px; /* Oval shape */
 }
 
 .logo img {
@@ -36,32 +41,64 @@ header {
 
 .resume-button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #08080861; /* Dark gray color */
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px; /* Oval shape */
 }
+
+/* Navigation bar */
+.nav__menu {
+    display: flex;
+}
+
+.nav__link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #110909; /* Transparent color */
+    transition: color 0.3s ease;
+    border-radius: 50px; /* Oval shape */
+}
+
+.nav__link:hover {
+    color: #ffd700; /* Yellow color */
+}
+
+.nav__toggle {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+}
+
+
 
 /* Main Container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Sections */
-.intro {
-    position: relative;
-    text-align: center;
-    color: #fff;
-    padding: 50px 0;
-    background: url('resources\background.jpg') no-repeat center center/cover;
-}
-
-.intro .content {
-    position: relative;
-    z-index: 1;
-}
+    background-image: url('resources\background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .intro {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black overlay */
+    padding: 50px; /* Adjust padding as needed */
+  }
+  
+  .intro .content {
+    color: white; /* Set text color to white */
+  }
+  
 
 .card {
     background-color: #f8f9fa;
@@ -83,15 +120,125 @@ header {
     margin: 0 10px;
     height: 30px;
 }
+/* ABOUT*/
+.about__card {
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .about__card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about__container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Adjust the gap between image and text */
+    padding: 20px;
+  }
+  
+  .about__img {
+    width: 200px;
+    border-radius: 0.5rem;
+  }
+  
+  .about__description {
+    flex: 1; /* Let the description take remaining space */
+    text-align: center;
+    margin-bottom: 1.25rem; /* Adjust margin as needed */
+  }
+  
+  .about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.25rem; /* Adjust margin as needed */
+  }
+  
+  .about__info-title {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: 600; /* Adjust font weight as needed */
+    color: #333; /* Adjust color as needed */
+  }
+  
+  .about__info-name {
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+  
+  .about__info-title,
+  .about__info-name {
+    display: block;
+    text-align: center;
+  }
+  
+  .about__buttons {
+    display: flex;
+    justify-content: center;
+  }
+   
+  
 
 /* Footer */
-.contact {
+.footer {
+    padding-top: 2rem;
+  }
+  
+  .footer__container {
+    row-gap: 3.5rem;
+  }
+  
+  .footer__bg {
+    background-color: #007bff62; /* Blue background color */
+    padding: 2rem 0 3rem;
+  }
+  
+  .footer__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+    color: #fff; /* White text color */
+  }
+  
+  .footer__subtitle {
+    font-size: var(--small-font-size);
+    color: #fff; /* White text color */
+  }
+  
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  
+  .footer__link:hover {
+    color: #cce5ff; /* Lighter blue text color on hover */
+  }
+  
+  .footer__social {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+    color: #fff; /* White social icon color */
+  }
+  
+  .footer__social:hover {
+    color: #cce5ff; /* Lighter blue social icon color on hover */
+  }
+  
+  .footer__copy {
+    font-size: var(--smaller-font-size);
     text-align: center;
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px;
-}
+    color: #fff; /* White text color */
+    margin-top: var(--mb-3);
+  }
+  
+  .footer__title,
+  .footer__subtitle,
+  .footer__link,
+  .footer__social {
+    color: #fff; /* White text color */
+  }
 
+  
 .marks .card img {
     width: 100%;
     border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
@@ -110,7 +257,7 @@ header {
 .hackathon-certificates .card img,
 .papers-presented .card img,
 .hobbies .card img {
-    width: 100%;
+    width: 80%; /* Reduced image size */
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -146,7 +293,9 @@ header {
 
 /* Additional styles for section dividers */
 .section-divider {
-    height: 50px; /* Adjust height as needed */
+    height: 2em; /* Reduced height to 2 lines */
+    margin: 0;
+    padding: 0;
 }
 
 /* CSS for Papers Presented section */
@@ -158,8 +307,8 @@ header {
 }
 
 .papers-presented .card {
-    flex-basis: calc(50% - 20px); /* Set card width to 50% minus margin */
-    margin-bottom: 20px;
+    flex-basis: calc(50% - 20px); /* Adjusted card width */
+    margin-bottom: 40px; /* Increased margin bottom for larger spacing */
 }
 
 .papers-presented .card:hover {
@@ -185,10 +334,6 @@ header {
     margin-bottom: 20px; /* Add space between the header and carousel */
 }
 
-.hobbies-heading {
-    margin-bottom: 20px; /* Add space between the header and carousel */
-}
-
 .hobbies .hobbies-carousel {
     display: flex;
     justify-content: center; /* Center the carousel horizontally */
@@ -204,6 +349,7 @@ header {
     scroll-snap-align: start; /* Snap to the start of each slide */
     flex: 0 0 calc(25% - 15px); /* Set slide width to one-fourth of the container width minus margin */
     margin-right: 20px; /* Add space between slides */
+    margin-bottom: 40px; /* Increased margin bottom for larger spacing */
 }
 
 .hobbies .carousel-slide:last-child {

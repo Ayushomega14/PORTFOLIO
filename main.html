@@ -5,45 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Raj Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <header>
+    <header class="nav">
         <div class="logo">
-            <img src="resources\Header part\mainlogo.png" alt="Logo">
+          <img src="resources\Header part\mainlogo.png" alt="Logo">
         </div>
-        <div class="navigation">
-            <button onclick="scrollToSection('about-me')">About Me</button>
-            <button onclick="scrollToSection('education')">Education</button>
-            <button onclick="scrollToSection('skills')">Skills</button>
-            <button onclick="scrollToSection('suite')">Projects</button>
-            <button onclick="scrollToSection('certi')">Certificates</button>
-            <button onclick="scrollToSection('hackathons')">Hackathons</button>
-            <button onclick="scrollToSection('papers-presented')">Papers-Presented</button>
-            <button onclick="scrollToSection('hobbies')">Hobbies</button>
-            <button onclick="scrollToSection('contact')">Contact</button>
+        <div class="nav__menu">
+          <button onclick="scrollToSection('about-me')" class="nav__link">About Me</button>
+          <button onclick="scrollToSection('education')" class="nav__link">Education</button>
+          <button onclick="scrollToSection('skills')" class="nav__link">Skills</button>
+          <button onclick="scrollToSection('suite')" class="nav__link">Projects</button>
+          <button onclick="scrollToSection('certi')" class="nav__link">Certificates</button>
+          <button onclick="scrollToSection('hackathons')" class="nav__link">Hackathons</button>
+          <button onclick="scrollToSection('papers-presented')" class="nav__link">Papers-Presented</button>
+          <button onclick="scrollToSection('hobbies')" class="nav__link">Hobbies</button>
+          <button onclick="scrollToSection('footer')" class="nav__link">Contact</button>
         </div>
         <div class="resume">
-            <a href="resources\Header part\Ayush Raj RESUME.pdf" target="_blank" class="resume-button">Resume</a>
+          <a href="resources\Header part\Ayush Raj RESUME.pdf" target="_blank" class="resume-button">Resume</a>
         </div>
-    </header>
+        <div class="nav__toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
 
-    <div class="container">
+      <div class="container">
         <section class="intro">
-            <div class="background-image"></div>
             <div class="content">
                 <h1>INTRODUCING</h1>
                 <h2>AYUSH RAJ</h2>
-                <p>VIEW ON Engineering Engineering is the art of turning imagination into reality—a symphony of innovation and precision. As an engineer, I believe that every problem is an opportunity, and every challenge is a gateway to solutions. My portfolio is a testament to the power of creative thinking, rigorous analysis, and the relentless pursuit of improvement. With a foundation in engineering, I strive to shape a world where ideas take flight and where technology paves the way for a better tomorrow. Welcome to my portfolio, where we explore the fusion of dreams and designs.</p>
-            </div>
+                </div>
         </section>
+    </div>
+    
+    
 
-        <h2>ABOUT ME</h2>
-        <section id="about-me" class="about-me card">
-            <p>Hello, I'm Ayush Raj, a dedicated Second-year engineering student at SM Institute of Science and Technology, located in Kattankalanthur, Tamil Nadu. My passion lies at the intersection of technology and creativity, where I thrive as a web developer and code logic enthusiast. With a strong foundation in engineering principles, I'm on a mission to harness the power of innovative solutions. My journey is marked by a relentless pursuit of excellence in web development, coupled with a deep appreciation for the elegance of code logic. Join me as I traverse the digital landscape, constantly seeking new horizons and pushing the boundaries of what's possible.</p>
-        </section>
+        <section class="about section" id="about">
+          
+            <div class="about__card card">
+                <h2 class="section__title">About Me</h2>
+              <div class="about__container container grid">
+                <img src="resources\pic.jpg" alt="pic" class="about__img">
+                <div class="about__description">
+                  <p><h3>Hello, I'm Ayush Raj, a dedicated Second-year engineering student at SM Institute of Science and Technology, located in Kattankalanthur, Tamil Nadu. My passion lies at the intersection of technology and creativity, where I thrive as a web developer and code logic enthusiast. With a strong foundation in engineering principles, I'm on a mission to harness the power of innovative solutions. My journey is marked by a relentless pursuit of excellence in web development, coupled with a deep appreciation for the elegance of code logic. Join me as I traverse the digital landscape, constantly seeking new horizons and pushing the boundaries of what's possible.</h3></p>
+                  <div class="about__info">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        
 
         <div class="section-divider"></div>
-
+        
+        <div class="about__card card">
         <section id="education" class="education">
             <h2>EDUCATION</h2>
             <div class="card">
@@ -59,11 +77,13 @@
                 <p>I am currently in my second year of pursuing a Bachelor's in Technology (B.Tech) in Engineering at SRM  Institute of Science and Technology, Kattankulathur Campus. This esteemed institution has  provided me with a dynamic and intellectually stimulating environment where I have been exposed to cutting-edge research, innovative coursework, and a diverse community of peers. My journey at SRM has equipped me with the knowledge and skills necessary to thrive in the field of engineering, and I look forward to continuing my academic and personal growth in this inspiring learning environment.
                 </p>
             </div>
+        </div>
         </section>
 
         <div class="section-divider"></div>
 
         <section class="semester-wise-marks card">
+            <div class="about__card card">
             <h2>SEMESTER WISE MARKS</h2>
             <div class="marks">
               <div class="card">
@@ -80,13 +100,13 @@
                   <h3>SEMESTER 3 : SGPA = 9.48</h3>
               </div>
           </div>
-          
             </div>
         </section>
 
         <div class="section-divider"></div>
 
         <section id="skills" class="skills">
+            <div class="about__card card">
             <h2>SKILLS</h2>
             <div class="skill-card">
                 <div class="skill-table">
@@ -134,6 +154,7 @@
                     </table>
                 </div>
             </div>
+            </div>
         </section>
         
         
@@ -141,6 +162,7 @@
         <div class="section-divider"></div>
 
         <section id="suite" class="suite">
+            <div class="about__card card">
             <h2 class="suite-heading">PROJECTS</h2>
             <div class="projects-carousel">
                 <div class="carousel-slide">
@@ -207,13 +229,16 @@
                 </a>
             </div>
                 </div>
+            </div>
         </section>
         
         
         <div class="section-divider"></div>
         
         <section id="certi" class="certi">
+            <div class="about__card card">
             <h2 class="certi-heading">CERTIFICATES</h2>
+            <h2>COURSES</h2>
             <!-- Cards for certificates -->
             <div class="certi-carousel">
                 <div class="carousel-slide">
@@ -312,11 +337,13 @@
                         </a>
                     </div>
                 </div>
+            </div>
         </section>
         
         <div class="section-divider"></div>
         
         <section id="hackathons" class="hackathons">
+            <div class="about__card card">
             <h2>HACKATHONS</h2>
             <!-- Cards for hackathons -->
             <div class="hackathon-carousel">
@@ -351,12 +378,14 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
         
         
         <div class="section-divider"></div>
 
-        <h2>PAPERS PRESENTED</h2>
+        <div class="about__card card">
+            <h2>PAPERS PRESENTED</h2>
         <!-- Cards for papers presented -->
         <div id="papers-presented" class="papers-presented">
             <div class="card">
@@ -372,14 +401,14 @@
                 </a>
             </div>
         </div>
-        
-            
+        </div>
             <!-- Repeat for other papers presented -->
         </section>
 
         <div class="section-divider"></div>
 
         <section id="hobbies" class="hobbies">
+            <div class="about__card card">
             <h2 class="hobbies-heading">HOBBIES</h2>
             <!-- Hobbies Carousel -->
             <div class="hobbies-carousel">
@@ -431,24 +460,41 @@
                 </div>
                 <!-- Repeat for other hobbies -->
             </div>
+            </div>
         </section>
         
-              
-        
         <div class="section-divider"></div>
-
-        <footer id="contact" class="contact">
-            <div class="content">
-                <h2>CONTACT</h2>
-                <p>AYUSH RAJ</p>
-                <p>Email: piyushayush2914@gmail.com</p>
-                <div class="social">
-                    <img src="linkedin.png" alt="LinkedIn">
-                    <img src="github.png" alt="GitHub">
+        <footer id="footer" class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">CONTACT</h1>
+                        <h3 class="footer__title">AR5787@SRMIST.EDU.IN</h3>
+                    </div>
+                    <div class="footer__socials" align="center">
+                        <a href="https://github.com/Ayushomega14" target="_blank" class="footer__social">
+                            <img src="resources\Footer\Github.png" alt="GitHub" style="width: 20px; height: 20px;">
+                        </a>
+                        <a href="https://www.instagram.com/_ayush_omega?utm_source=qr&igsh=MTAxcWdhMXdkaXAyNQ==" target="_blank" class="footer__social">
+                            <img src="resources\Footer\Instragram.png" alt="Instagram" style="width: 20px; height: 20px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayush-raj-783a4824b/" target="_blank" class="footer__social">
+                            <img src="resources\Footer\Linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;">
+                        </a>
+                        <a href="https://leetcode.com/ar5787/" target="_blank" class="footer__social">
+                            <img src="resources\Footer\Leetcode.png" alt="LeetCode" style="width: 20px; height: 20px;">
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/RA2211003010447" target="_blank" class="footer__social">
+                            <img src="resources\Footer\Hackerrank.png" alt="HackerRank" style="width: 20px; height: 20px;">
+                        </a>
+                    </div>
                 </div>
+                <p class="footer__copy">&#169; AYUSH RAJ. All rights reserved.</p>
             </div>
         </footer>
-    </div>
+        
+        
+        
 
     <script src="scripts.js"></script>
     <script>
