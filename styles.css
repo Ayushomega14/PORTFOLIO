@@ -84,7 +84,7 @@ header {
 
 /* Main Container */
 .container {
-    background-image: url('resources\background.jpg');
+    background-image: url('resources\background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ header {
   .about__info-title,
   .about__info-name {
     display: block;
-    text-align: center;
+    text-align: justify;
   }
   
   .about__buttons {
@@ -177,7 +177,16 @@ header {
     justify-content: center;
   }
    
-  
+  .edu-section {
+    display: flex;
+}
+
+.edu-section .card {
+    flex-grow: 1;
+    margin: 0 10px; /* Adjust margin as needed */
+}
+
+
 
 /* Footer */
 .footer {
