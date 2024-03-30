@@ -11,6 +11,17 @@
         <div class="logo">
             <img src="resources\Header part\mainlogo.png" alt="Logo">
         </div>
+        <div class="navigation">
+            <button onclick="scrollToSection('about-me')">About Me</button>
+            <button onclick="scrollToSection('education')">Education</button>
+            <button onclick="scrollToSection('skills')">Skills</button>
+            <button onclick="scrollToSection('suite')">Projects</button>
+            <button onclick="scrollToSection('certi')">Certificates</button>
+            <button onclick="scrollToSection('hackathons')">Hackathons</button>
+            <button onclick="scrollToSection('papers-presented')">Papers-Presented</button>
+            <button onclick="scrollToSection('hobbies')">Hobbies</button>
+            <button onclick="scrollToSection('contact')">Contact</button>
+        </div>
         <div class="resume">
             <a href="resources\Header part\Ayush Raj RESUME.pdf" target="_blank" class="resume-button">Resume</a>
         </div>
@@ -26,14 +37,14 @@
             </div>
         </section>
 
-        <section class="about-me card">
-            <h2>ABOUT ME</h2>
+        <h2>ABOUT ME</h2>
+        <section id="about-me" class="about-me card">
             <p>Hello, I'm Ayush Raj, a dedicated Second-year engineering student at SM Institute of Science and Technology, located in Kattankalanthur, Tamil Nadu. My passion lies at the intersection of technology and creativity, where I thrive as a web developer and code logic enthusiast. With a strong foundation in engineering principles, I'm on a mission to harness the power of innovative solutions. My journey is marked by a relentless pursuit of excellence in web development, coupled with a deep appreciation for the elegance of code logic. Join me as I traverse the digital landscape, constantly seeking new horizons and pushing the boundaries of what's possible.</p>
         </section>
 
         <div class="section-divider"></div>
 
-        <section class="education">
+        <section id="education" class="education">
             <h2>EDUCATION</h2>
             <div class="card">
                 <h3>10th</h3>
@@ -62,6 +73,7 @@
               <div class="card">
                   <img src="resources\semester Marks\sem2.jpg" alt="Semester 2 Image">
                   <h3>SEMESTER 2 : SGPA = 9.71</h3>
+                  <h2>CGPA = 9.52 </h2 align="center" >
               </div>
               <div class="card">
                   <img src="resources\semester Marks\sem3.jpg" alt="Semester 3 Image">
@@ -70,47 +82,65 @@
           </div>
           
             </div>
-            <p>CGPA = 9.52</p>
         </section>
 
         <div class="section-divider"></div>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>SKILLS</h2>
             <div class="skill-card">
-                <div class="skill">C</div>
-                <div class="rating">7/10</div>
-            </div>
-            <!-- Repeat for other skills -->
-            <div class="skill-card">
-                <div class="skill">C++</div>
-                <div class="rating">8/10</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill">JAVA</div>
-                <div class="rating">9/10</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill">PYTHON</div>
-                <div class="rating">8/10</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill">HTML</div>
-                <div class="rating">9/10</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill">CSS</div>
-                <div class="rating">8/10</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill">JAVASCRIPT</div>
-                <div class="rating">7/10</div>
+                <div class="skill-table">
+                    <table>
+                        <tr>
+                            <th>Programming Language</th>
+                            <th>Technical Proficiency</th>
+                            <th>Soft Skills</th>
+                        </tr>
+                        <tr>
+                            <td><button>C</button></td>
+                            <td><button>Web Development</button></td>
+                            <td><button>Communication</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>C++</button></td>
+                            <td><button>Database Management</button></td>
+                            <td><button>Problem Solving</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>JAVA</button></td>
+                            <td><button>Algorithm Design</button></td>
+                            <td><button>Teamwork</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>PYTHON</button></td>
+                            <td><button>Data Structures</button></td>
+                            <td><button>Time Management</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>HTML</button></td>
+                            <td><button>Version Control (Git)</button></td>
+                            <td><button>Creativity</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>CSS</button></td>
+                            <td><button>Responsive Design</button></td>
+                            <td><button>Adaptability</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>JAVASCRIPT</button></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
+        
+        
 
         <div class="section-divider"></div>
 
-        <section class="suite">
+        <section id="suite" class="suite">
             <h2 class="suite-heading">PROJECTS</h2>
             <div class="projects-carousel">
                 <div class="carousel-slide">
@@ -182,7 +212,7 @@
         
         <div class="section-divider"></div>
         
-        <section class="certi">
+        <section id="certi" class="certi">
             <h2 class="certi-heading">CERTIFICATES</h2>
             <!-- Cards for certificates -->
             <div class="certi-carousel">
@@ -286,7 +316,7 @@
         
         <div class="section-divider"></div>
         
-        <section class="hackathons">
+        <section id="hackathons" class="hackathons">
             <h2>HACKATHONS</h2>
             <!-- Cards for hackathons -->
             <div class="hackathon-carousel">
@@ -328,7 +358,7 @@
 
         <h2>PAPERS PRESENTED</h2>
         <!-- Cards for papers presented -->
-        <div class="papers-presented">
+        <div id="papers-presented" class="papers-presented">
             <div class="card">
                 <a href="https://docs.google.com/document/d/1TmMQFK3n9QrP0GfWLgeIxy1_nYA1xIVF/edit?usp=sharing&ouid=117530265105684235577&rtpof=true&sd=true" target="_blank">
                     <h3>IEEE PAPER FOR TEXT BASED ADVENTURE GAME</h3>
@@ -349,7 +379,7 @@
 
         <div class="section-divider"></div>
 
-        <section class="hobbies">
+        <section id="hobbies" class="hobbies">
             <h2 class="hobbies-heading">HOBBIES</h2>
             <!-- Hobbies Carousel -->
             <div class="hobbies-carousel">
@@ -407,7 +437,7 @@
         
         <div class="section-divider"></div>
 
-        <footer class="contact">
+        <footer id="contact" class="contact">
             <div class="content">
                 <h2>CONTACT</h2>
                 <p>AYUSH RAJ</p>
@@ -421,5 +451,13 @@
     </div>
 
     <script src="scripts.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 </body>
 </html>

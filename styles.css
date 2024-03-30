@@ -351,3 +351,50 @@ header {
     height: auto;
     object-fit: cover; /* Maintain aspect ratio and cover entire container */
 }
+
+/* CSS for Skill Cards */
+.skill-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding shadow effect */
+    margin-top: 20px; /* Space between "Skills" heading and the table */
+}
+
+.skill-table {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    overflow-x: auto;
+    padding: 0 10px; /* Padding from left and right */
+}
+
+.skill-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skill-table th, .skill-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.skill-table th {
+    background-color: #f0f0f0;
+}
+
+.skill-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.skill-table button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-table button:hover {
+    background-color: #e0e0e0; /* Hover effect */
+}
