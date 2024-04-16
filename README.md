@@ -3,7 +3,6 @@
 ## Inspiration
 
 In the digital age, having a captivating portfolio website is essential for showcasing your skills, projects, and achievements to potential employers or clients. My inspiration behind creating this portfolio website stemmed from the desire to present my work in a professional and engaging manner while highlighting my proficiency in web development technologies such as HTML, CSS, and JavaScript. I aimed to create a visually appealing platform that not only reflects my expertise but also provides visitors with an immersive experience as they explore my projects and accomplishments.
-I Have Inspired Majorly by the Bharat Intern as i got a project from them to create a portfolio as a intern project.
 
 ## What it Does
 
