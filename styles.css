@@ -263,7 +263,6 @@ header {
 /* Updated styles for new elements */
 .projects .card img,
 .certificates .card img,
-.hackathon-certificates .card img,
 .papers-presented .card img,
 .hobbies .card img {
     width: 80%; /* Reduced image size */
@@ -273,7 +272,6 @@ header {
 
 .projects .card a,
 .certificates .card a,
-.hackathon-certificates .card a,
 .papers-presented .card a {
     display: block;
     text-decoration: none;
@@ -468,44 +466,6 @@ header {
 }
 
 
-/* CSS for Hackathons section */
-.hackathons {
-    text-align: center; /* Center the header */
-    margin-bottom: 20px; /* Add space between the header and carousel */
-}
-
-.hackathons .hackathon-carousel {
-    display: flex;
-    justify-content: center; /* Center the carousel horizontally */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
-    scroll-snap-type: x mandatory; /* Enable snapping to each slide */
-    -ms-scroll-snap-type: mandatory;
-    scroll-behavior: smooth; /* Enable smooth scrolling behavior */
-    width: 100%; /* Ensure full width */
-}
-
-.hackathons .carousel-slide {
-    scroll-snap-align: start; /* Snap to the start of each slide */
-    flex: 0 0 calc(25% - 15px); /* Set slide width to one-fourth of the container width minus margin */
-    margin-right: 20px; /* Add space between slides */
-}
-
-.hackathons .carousel-slide:last-child {
-    margin-right: 0; /* Remove margin from the last slide */
-}
-
-.hackathons .carousel-slide .card {
-    border-radius: 10px;
-    overflow: hidden; /* Ensure images don't overflow */
-}
-
-.hackathons .carousel-slide .card img {
-    width: 100%; /* Ensure images fill their container */
-    max-width: 320px; /* Set maximum width for images */
-    height: auto;
-    object-fit: cover; /* Maintain aspect ratio and cover entire container */
-}
 
 /* CSS for Skill Cards */
 .skill-card {
