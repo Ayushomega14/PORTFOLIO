@@ -34,7 +34,7 @@ My journey in building this portfolio website has been incredibly rewarding, pro
 
 As I continue to evolve and refine my portfolio website, my roadmap includes:
 
-- Adding more projects and case studies to showcase a diverse range of skills and experiences.
+- Adding more projects and case studies to showcase a diverse range of skills and experiences and much more.
 - Incorporating feedback and insights from visitors to continuously improve the user experience and design.
 - Exploring opportunities to integrate backend technologies and interactive features for enhanced functionality.
 - Enhancing accessibility features to ensure inclusivity for all visitors, including those with disabilities.
